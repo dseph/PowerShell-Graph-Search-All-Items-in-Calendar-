@@ -55,7 +55,7 @@ $headers = @{
 # =========================
 
 $select ="id,subject,iCalUId,isOrganizer,isOnlineMeeting,onlineMeetingProvider,originalEndTimeZone,recurrence,start,end,subject,onlineMeeting" 
-$filter = "isOrganizer eq true and isCancelled eq false and isDraft eq false"
+$filter = "isOrganizer eq true and isCancelled eq false"
 $uri = "https://graph.microsoft.com/v1.0/users/$UserPrincipalName/calendars/$CalendarId/events?" +
        "&`$select=$select&`$top=$TopValue&`$filter=$filter"
 $uri 
